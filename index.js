@@ -15,16 +15,7 @@ var options = {
 };
 
 // the demo can auto join channel with params in url
-$(() => {
-  var urlParams = new URL(location.href).searchParams;
 
-  if (options.appid && options.channel) {
-    $("#appid").val(options.appid);
-    $("#token").val(options.token);
-    $("#channel").val(options.channel);
-    $("#join-form").submit();
-  }
-})
 
 $("#join-form").submit(async function (e) {
   e.preventDefault();
